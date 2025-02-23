@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+shigoto-tankentai/
+├── public/                       # 静的ファイル (画像・アイコンなど)
+│   ├── images/                   # イメージ素材
+│   │   └── logo.png
+│   └── favicon.ico               # Favicon
+│
+├── src/                          # ソースコード
+│   ├── pages/                    # Next.js ページルーティング
+│   │   ├── index.tsx             # トップページ (/)
+│   │   ├── about.tsx             # 会社概要 (/about)
+│   │   ├── mission.tsx           # サービス理念 (/mission)
+│   │   ├── services.tsx          # サービス紹介 (/services)
+│   │   ├── features.tsx          # 特徴・強み (/features)
+│   │   ├── cases.tsx             # 導入事例 (/cases)
+│   │   ├── faq.tsx               # よくある質問 (/faq)
+│   │   ├── recruit.tsx           # 採用情報 (/recruit)
+│   │   ├── contact.tsx           # お問い合わせ (/contact)
+│   │   ├── privacy-policy.tsx    # プライバシーポリシー (/privacy-policy)
+│   │   └── _app.tsx              # ページ共通設定
+│   │   └── _document.tsx         # カスタムドキュメント (HTML構造)
+│
+│   ├── components/               # 再利用可能なコンポーネント
+│   │   ├── Header.tsx            # ヘッダー
+│   │   ├── Footer.tsx            # フッター
+│   │   ├── TwitterEmbed.tsx      # X(旧Twitter) 埋め込み
+│   │   ├── PageTransition.tsx    # ページ遷移アニメーション
+│   │   └── Layout.tsx            # 共通レイアウト
+│
+│   ├── styles/                   # グローバル・モジュールスタイル
+│   │   ├── globals.css           # グローバルスタイル (Tailwind CSS)
+│   │   └── Header.module.css     # ヘッダー専用スタイル
+│
+│   ├── hooks/                    # カスタムフック
+│   │   └── useForm.ts            # フォームバリデーション用
+│
+│   ├── utils/                    # ユーティリティ関数
+│   │   └── formValidation.ts     # お問い合わせフォーム用バリデーション
+│
+│   ├── assets/                   # フォントやSVGなどのアセット
+│   │   └── fonts/                # フォントファイル
+│   │   └── icons/                # アイコン素材
+│
+│   └── lib/                      # 外部サービス・APIとの連携
+│       └── emailjs.ts            # EmailJS 設定 (お問い合わせ用)
+│
+├── tailwind.config.js            # Tailwind CSS 設定
+├── postcss.config.js             # PostCSS 設定
+├── tsconfig.json                 # TypeScript 設定
+├── package.json                  # プロジェクト設定
+└── next.config.js                # Next.js 設定
+"# web" 
