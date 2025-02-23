@@ -1,0 +1,88 @@
+/* ヒーローセクション */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f0f8ff;
+  }
+  
+  .heroTitle {
+    font-size: 2.8rem;
+    color: #0070f3;
+    margin-bottom: 16px;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .heroImage {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* ミッションセクション */
+  .missionSection {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .missionBlock {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  
+  .missionBlock h2 {
+    font-size: 1.8rem;
+    color: #0070f3;
+    margin-bottom: 12px;
+  }
+  
+  .missionBlock p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .missionBlock ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .missionBlock li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .missionBlock li::before {
+    content: '•';
+    color: #0070f3;
+    font-size: 1.5rem;
+    margin-right: 8px;
+  }
+  
+  /* モバイル対応 */
+  @media (max-width: 768px) {
+    .heroTitle {
+      font-size: 2rem;
+    }
+  
+    .heroSubtitle {
+      font-size: 1.2rem;
+    }
+  
+    .missionBlock h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

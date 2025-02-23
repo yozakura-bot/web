@@ -1,0 +1,68 @@
+/* ヒーローセクション */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .heroTitle {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  /* 本文セクション */
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .content h2 {
+    font-size: 1.8rem;
+    margin-top: 32px;
+    color: #0070f3;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-top: 12px;
+  }
+  
+  .content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 12px;
+  }
+  
+  .content li {
+    margin-bottom: 8px;
+  }
+  
+  a {
+    color: #0070f3;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  .updatedDate {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #888;
+    text-align: right;
+  }
+  

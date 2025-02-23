@@ -1,0 +1,78 @@
+/* ヒーローセクション */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f0f8ff;
+  }
+  
+  .heroTitle {
+    font-size: 2.8rem;
+    color: #0070f3;
+    margin-bottom: 16px;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* サービスカードグリッド */
+  .servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  /* 各サービスカード */
+  .serviceCard {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .serviceCard:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .serviceCard h2 {
+    font-size: 1.5rem;
+    color: #0070f3;
+    margin-top: 16px;
+  }
+  
+  .serviceCard p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 12px;
+    line-height: 1.5;
+  }
+  
+  .serviceImage {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* モバイル対応 */
+  @media (max-width: 768px) {
+    .heroTitle {
+      font-size: 2rem;
+    }
+  
+    .heroSubtitle {
+      font-size: 1.2rem;
+    }
+  
+    .serviceCard h2 {
+      font-size: 1.3rem;
+    }
+  }
+  

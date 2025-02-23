@@ -1,0 +1,91 @@
+/* ヒーローセクション */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f0f8ff;
+  }
+  
+  .heroTitle {
+    font-size: 2.8rem;
+    color: #0070f3;
+    margin-bottom: 16px;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* 導入事例グリッド */
+  .casesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  /* 各事例カード */
+  .caseCard {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .caseCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .caseCard h2 {
+    font-size: 1.5rem;
+    color: #0070f3;
+    margin-top: 16px;
+  }
+  
+  .caseCard p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 12px;
+    line-height: 1.5;
+  }
+  
+  .caseImage {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* タグ表示 */
+  .caseTag {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: #0070f3;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  /* モバイル対応 */
+  @media (max-width: 768px) {
+    .heroTitle {
+      font-size: 2rem;
+    }
+  
+    .heroSubtitle {
+      font-size: 1.2rem;
+    }
+  
+    .caseCard h2 {
+      font-size: 1.3rem;
+    }
+  }
+  

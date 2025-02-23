@@ -1,0 +1,110 @@
+.header {
+    background-color: #4C9AFF; /* メインカラー */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .logo img {
+    margin-right: 10px;
+  }
+  
+  .menuButton {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar, .barOpen {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .barOpen {
+    transform: rotate(45deg);
+    background-color: #FFD700; /* アクセントカラー */
+  }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+  }
+  
+  .nav a:hover {
+    color: #FFD700; /* ホバー時にアクセントカラー */
+  }
+  
+  .contactButton {
+    background-color: #FFD700;
+    color: #4C9AFF;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .contactButton:hover {
+    background-color: white;
+    color: #4C9AFF;
+  }
+  
+  /* モバイル対応 */
+  @media (max-width: 768px) {
+    .menuButton {
+      display: flex;
+    }
+  
+    .nav {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #4C9AFF;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 10px 20px;
+    }
+  
+    .navOpen {
+      display: block;
+    }
+  
+    .nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

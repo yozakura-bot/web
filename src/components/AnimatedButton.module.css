@@ -1,0 +1,25 @@
+.animatedButton {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #0070f3;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .animatedButton:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .animatedButton:focus {
+    box-shadow: 0 0 0 4px rgba(0, 112, 243, 0.5);
+  }
+  
+  .animatedButton:active {
+    background-color: #005bb5;
+  }
+  

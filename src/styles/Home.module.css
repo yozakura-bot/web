@@ -1,0 +1,60 @@
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f0f8ff;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #4c9aff;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .features {
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  .features h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #4c9aff;
+  }
+  
+  .featureList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .featureItem {
+    text-align: center;
+    max-width: 250px;
+  }
+  
+  .featureItem h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #4c9aff;
+  }
+  
+  .featureItem p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* モバイル対応 */
+  @media (max-width: 768px) {
+    .featureList {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

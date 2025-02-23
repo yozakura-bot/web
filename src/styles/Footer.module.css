@@ -1,0 +1,68 @@
+.footer {
+    background-color: #4C9AFF; /* メインカラー */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .logoSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .nav a:hover {
+    color: #FFD700; /* アクセントカラー */
+  }
+  
+  .sns img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease;
+  }
+  
+  .sns img:hover {
+    transform: scale(1.1);
+  }
+  
+  .copy {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #E0E0E0;
+  }
+  
+  /* モバイル対応 */
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  
